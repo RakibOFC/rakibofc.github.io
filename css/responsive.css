@@ -219,13 +219,13 @@
         height: 21px;
         width: 38px;
         text-align: center;
-        color: #fff;
+        color: #ffffff;
         float: right;
         padding: 10px;
     }
     #flip:hover {
-        background-color: #dfd9d9;
-        color: #ffffff;
+        background-color: #ffffff;
+        color: #000000;
     }
     #flip-nav {
         color: #ffffff;
@@ -237,7 +237,7 @@
         width: auto;
         margin-top: 37px;
         display: none;
-        background-color: #000000;
+        background-color: #292727;
         color: #ffffff;
         float: right;
     }
@@ -253,6 +253,9 @@
     #panel a:hover {
         color: #000000;
         background-color: #dfd9d9;
+    }
+    #flip-right-menu #panel {
+        color: tomato;
     }
 }
 
