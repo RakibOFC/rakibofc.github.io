@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Menu</title>
+</head>
+<body>
+		<div class="container_full nav_bg">
+			<div class="container">
+				<div class="nav_wrapper">
+					<nav>
+						<ul id="nav">
+							<li><a href="#">Menu Item</a></li>
+							<li><a href="#">Menu Item</a></li>
+							<li><a href="#">Menu Item</a></li>
+							<li><a href="#">Menu Item</a></li>
+							<li><a href="#">Menu Item</a></li>
+							<li><a href="#">Menu Item</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>	
+
+		<!-- jQuery Min Version -->	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript" charset="utf-8"></script>	
+		
+<!--JS File For Responsive Menu -->	
+		<script src="js/responsive-menu.js"></script>
+		
+<script>
+  domready(function(){
+			selectnav('nav', {
+		label: '*** Select Nav *** '
+	});
+	prettyPrint()
+		})
+</script>
+<!--JS Files For Responsive Menu Ends Here -->	
+</body>
+</html>
