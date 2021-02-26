@@ -1,39 +1,120 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>My jQuery</title>
-	<!-- www.itbari.com -->
-<script src="jquery-3.2.1.min.js"></script>
-<style>
-#panel, #flip {
-    padding: 5px;
-    text-align: center;
-    background-color: #d3f672;
-    border: solid 1px #c3c3c3;
-}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #left {
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            float: left;
+        }
+        #left a{
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0;
+            padding: 10px;
+        }
+        #left a:hover{
+            margin: 0;
+            background-color: #dfd9d9;
+            color: #000000;
+            padding: 10px;
+        }
+        
+        #flip {
+            cursor: pointer;
+            height: 17px;
+            width: 38px;
+            text-align: center;
+            color: #fff;
+            float: right;
+            padding: 10px;
+        }
+        #flip:hover{
+            background-color: #e61616;
+            color: #ffffff;
+        }
+        #flip-nav{
+            color: #ffffff;
+            background-color: #000000;
+            height: 37px;
+        }
 
-#panel {
-    padding: 50px;
-	display: none;
-}
-</style>	
+        #panel {
+            margin-top: 37px;
+            display: none;
+            background-color: #000000;
+            color: #ffffff;
+            float: right;
+        }
+
+        #panel a {
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+            padding: 10px 20px;
+        }
+        #panel a:hover {
+            color: #000000;
+            background-color: #dfd9d9;
+        }
+        #flip-nav{
+            z-index: 99999;
+        }
+        #flip-right-menu{
+            z-index: -99999;
+        }
+        #panel #drop-down{
+            margin-left: 30px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle(1000);
+            });
+        });
+    </script>
 </head>
+
 <body>
-
-<script>
-$(document).ready(function(){
-    $("#flip").click(function(){
-		$("#panel").slideToggle(1500);
-    });
-});
-</script>
-
-<div id="flip">Click to Slide</div>
-<div id="panel">Do you think ITBari has the best Web Design Bangla tutorial in the world? If yes, then let your friends know about ITBari! We appreciate your sharing.</div>
-
-
-
-<script src="myscript.js"> </script>
+    <div id="flip-nav">
+        <div id="left">
+            <a href="">RakibOFC</a>
+        </div>
+        <div id="flip-right-menu">
+            <div id="flip">☰</div>
+            <div id="panel">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Site Links &#x25BC</a>
+                <div id="drop-down">
+                    <a href="">Drop Down</a>
+                    <a href="">Drop Down</a>
+                    <a href="">Drop Down</a>
+                    <a href="">Drop Down</a>
+                </div>
+                <a href="">Contact</a>
+                <a href="">More &#x25BC</a>
+                <div id="drop-down">
+                    <a href="">Drop Down</a>
+                    <a href="">Drop Down</a>
+                    <a href="">Drop Down</a>
+                    <a href="">Drop Down</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
