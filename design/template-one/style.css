@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html, body{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #cec5c5;
+}
+.clearfix:before, .clearfix:after{
+	display:table;
+	content:"";
+}
+.clearfix:after{
+	clear:both;
+}
+/* Main Body Structure */
+.container{
+	padding: 20px;
+	width:960px;
+	margin:0 auto;
+	background-color: #ffffff;
+}
+
+/* Site Header */
+header.main-header{
+	border-bottom:1px solid #067092;
+	padding-top:20px;
+}
+header.main-header h1 a{
+	color:#067092;
+	text-decoration:none;
+} 
+header.main-header h1{
+	margin:0;
+}
+header.main-header h3{
+	font-style:italic;
+	margin-top:0;
+}
+
+/* Site Navigation */
+.menu .active a{
+	background:#067092;
+	color:#fff;
+}
+.main-header nav{
+	margin-top:30px;
+}
+.main-menu ul{
+	margin:0;
+	padding:0;
+}
+.main-menu ul:before, .main-menu ul:after{
+	content:"";
+	display:table;
+}
+.main-menu ul:after{
+	clear:both;
+}
+.main-menu ul li{
+	list-style:none;
+	float:left;
+	margin-right:10px;
+}
+.main-menu ul li a{
+	padding:10px 20px;
+	display:block;
+	text-decoration:none;
+	border:1px solid #067092;
+	border-radius: 5px 5px 0 0;
+	border-bottom:none;
+	color:#000;
+}
+.main-menu ul li a:hover{
+	background:#067092;
+	color:#fff;
+}
+/*Site Content*/
+.left_content{
+	width: 720px;
+	float:left;
+	border-right: 1px solid #067092;
+	padding-right: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+.content_wrapper > .clear {
+    clear:both;
+}
+
+/* Site Sidebar */
+.sidebar{
+	float:right;
+	display:flexbox;
+	padding: 10px;
+}
+
+.sidebar a{
+	color: #067092;
+	text-decoration: none;
+}
+
+.sidebar a:hover{
+	color: #000000;
+}
+
+.sidebar ul li{
+	list-style-type: circle;
+	padding: 5px;
+}
+
+#margin{
+	border-bottom: 1px solid #067092;
+}
+/* Site Footer */
+
+/* Widget */
+
+.widget{
+	display: flex;
+    justify-content: space-around;
+}
+
+.widget a{
+	color: #067092;
+	text-decoration: none;
+}
+
+.widget a:hover{
+	color: #000000;
+}
+
+.widget ul li{
+	list-style-type: circle;
+	padding: 5px;
+}
+
+.site-footer{
+	padding: 10px;
+	padding-top:10px;
+	background-color: #e7e1e1;
+	border-radius: 0px 0px 8px 8px;
+}
+.site-footer>p{
+	float:left;
+	margin:0;
+	padding:0;
+}
+.site-footer p a{
+	color:#067092;
+	text-decoration:none;
+}
+#footer_nav{
+	float:right;
+}
+#footer_nav ul{
+	margin:0;
+	padding:0;
+}
+#footer_nav ul li{
+	float:left;
+	list-style:none;
+	padding:1px 20px;
+	border-right:1px solid #ddd;
+}
+#footer_nav ul li:last-child{
+	border-right:none;
+}
+#footer_nav ul li a{
+	color:#2c7092;
+	text-decoration:none;
+}
+/*
+	Tutorial By- http://ITBari.com, All Rights Reserved
+*/
