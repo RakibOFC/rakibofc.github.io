@@ -190,7 +190,10 @@
     <script src="js/jquery.nivo.slider.js"></script>
     <script>
         $(window).load(function () {
-            $('#slider').nivoSlider();
+            $('#slider').nivoSlider({
+                width: '100%',
+                speed: 1000
+            });
         });
     </script>
 </body>
