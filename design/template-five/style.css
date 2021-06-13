@@ -59,7 +59,7 @@ p {
 
 .floatleft {
 	float: left;
-	padding-top: 5px;
+	padding-top: 0px;
 }
 
 .floatright {
