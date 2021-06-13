@@ -6652,9 +6652,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-    font-size: 4.2rem;
-    line-height: 4.62rem;
-    margin: 2.1rem 0 1.68rem 0
+    font-size:unset;
+    line-height:unset;
+    margin:unset;
 }
 
 h2 {

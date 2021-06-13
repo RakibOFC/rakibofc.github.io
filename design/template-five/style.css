@@ -28,8 +28,8 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	margin-top: 10px;
-	margin-bottom: 10px
+	margin-top: 0px;
+	margin-bottom: 0px
 }
 
 p {
@@ -59,7 +59,7 @@ p {
 
 .floatleft {
 	float: left;
-	padding-top: 19px;
+	padding-top: 10px;
 }
 
 .floatright {
