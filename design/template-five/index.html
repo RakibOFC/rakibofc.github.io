@@ -2,16 +2,19 @@
 <html>
 
 <head>
-	<title>Blogg Name | Web Design & Development Point/</title>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blogg Name | Web Design & Development Point/</title>
+
 	<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/base/jquery-ui.css" type="text/css" media="all" />
-	
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/base/jquery-ui.css"
+		type="text/css" media="all" />
 	<link href="font/font.css" rel="stylesheet" type="text/css" />
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="images/fav.jpg" type="image/gif" sizes="16x16" />
@@ -41,12 +44,11 @@
 			<div id="slider_wrapper">
 				<div class="slider_w">
 					<div class="slider-wrapper theme-light">
-						
-						<img src="images/web-dev-3.png" alt="Web Dev-3" />
-						<!-- <div id="slider" class="nivoSlider">
-							<img src="images/web-dev.jpg" alt="Web Dev-1" />
-							<img src="images/web-dev-2.png" alt="Web Dev-2" />
-						</div> -->
+						<div id="slider" class="nivoSlider">
+							<img src="images/web-dev.jpg" alt="" />
+							<img src="images/web-dev-2.png" alt="" />
+							<img src="images/web-dev-3.png" alt="" />
+						</div>
 					</div>
 				</div>
 			</div>
@@ -186,11 +188,13 @@
 
 	<!--Call Latest jQuery and all other Scripts-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
 	<script src="js/jquery.nivo.slider.js"></script>
 	<script>
 		$(window).load(function () {
-			$('#slider').nivoSlider();
+			$('#slider').nivoSlider({
+				width: '100%',
+				speed: 1000
+			});
 		});
 	</script>
 </body>
