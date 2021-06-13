@@ -21,13 +21,6 @@
 </head>
 
 <body>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="js/jquery.nivo.slider.js"></script>
-	<script>
-		$(window).load(function () {
-			$('#slider').nivoSlider();
-		});
-	</script>
 	<div class="container_full header_bg">
 		<div class="fix container">
 			<header id="header">
@@ -194,7 +187,21 @@
 	</div>
 
 	<!--Call Latest jQuery and all other Scripts-->
-	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/jquery.nivo.slider.js"></script>
+	<script>
+		$(function () {
+			$("#slider").nivoSlider();
+		});
+	</script>
+	<!-- 
+		<script>
+			$(window).load(function () {
+				$('#slider').nivoSlider();
+			});
+		</script>
+		
+	 -->
 </body>
 
 </html>
