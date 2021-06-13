@@ -44,11 +44,11 @@
 			<div id="slider_wrapper">
 				<div class="slider_w">
 					<div class="slider-wrapper theme-light">
-						<div id="slider" class="nivoSlider">
+						<!-- <div id="slider" class="nivoSlider"> -->
 							<img src="images/web-dev.jpg" alt="" />
-							<img src="images/web-dev-2.png" alt="" />
-							<img src="images/web-dev-3.png" alt="" />
-						</div>
+							<!-- <img src="images/web-dev-2.png" alt="" />
+							<img src="images/web-dev-3.png" alt="" /> -->
+						<!-- </div> -->
 					</div>
 				</div>
 			</div>
@@ -190,18 +190,10 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/jquery.nivo.slider.js"></script>
 	<script>
-		$(function () {
-			$("#slider").nivoSlider();
+		$(window).load(function () {
+			$('#slider').nivoSlider();
 		});
 	</script>
-	<!-- 
-		<script>
-			$(window).load(function () {
-				$('#slider').nivoSlider();
-			});
-		</script>
-		
-	 -->
 </body>
 
 </html>
