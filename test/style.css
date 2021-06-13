@@ -9,11 +9,10 @@
   background-color: #ffffff;
 }
 .slider {
-  width: 900px;
+  width: 1000px;
   margin: 0 auto;
 }
 .slider .indicators {
   bottom: 60px;
   z-index: 100;
-  /* text-align: left; */
 }

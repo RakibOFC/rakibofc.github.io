@@ -6,18 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Site Name | Web Design & Development Point/</title>
-
+	
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css'/>
 	<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/base/jquery-ui.css"
 		type="text/css" media="all" />
 	<link href="font/font.css" rel="stylesheet" type="text/css" />
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="images/fav.jpg" type="image/gif" sizes="16x16" />
+
 </head>
 
 <body>
@@ -42,13 +40,13 @@
 	<div class="container_full slider_bg">
 		<div class="fix container">
 			<div id="slider_wrapper">
-				<div class="slider_w">
-					<div class="slider-wrapper theme-light">
-						<!-- <div id="slider" class="nivoSlider"> -->
-							<img src="images/web-dev.jpg" alt="" />
-							<!-- <img src="images/web-dev-2.png" alt="" />
-							<img src="images/web-dev-3.png" alt="" /> -->
-						<!-- </div> -->
+				<div id="slider-wrapper">
+					<div class="slider">
+						<ul class="slides">
+							<li><img src="https://rakibofc.github.io/images/web-dev.jpg"></li>
+							<li><img src="https://rakibofc.github.io/images/web-dev-2.png"></li>
+							<li><img src="https://rakibofc.github.io/images/web-dev-3.png"></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -187,11 +185,11 @@
 	</div>
 
 	<!--Call Latest jQuery and all other Scripts-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="js/jquery.nivo.slider.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js'></script>
 	<script>
-		$(window).load(function () {
-			$('#slider').nivoSlider();
+		$(document).ready(function () {
+			$('.slider').slider();
 		});
 	</script>
 </body>
