@@ -1,0 +1,355 @@
+    /*
+ *
+ * Theme Name: Second WP Theme
+ * Version: 1.0
+ * Author: Rakibul Islam
+ * Author URI: https://rakibofc.blogspot.com/
+ * Description: This is my second Wordpress theme.
+ *
+ */
+    
+    * {
+        margin: 0;
+        padding: 0
+    }
+    
+    body {
+        background-color: #EEE8AE;
+    }
+    
+    blockquote {
+        background: #ddd;
+        margin-left: 50px;
+        padding: 10px;
+        padding-left: 30px;
+        border-left: 2px solid orange;
+    }
+    
+    .main_wrap {
+        width: 100%
+    }
+    
+    .wrap {
+        width: 960px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .header_bg {
+        background: #FAB72A;
+        border-bottom: 5px solid #6B710E;
+        border-top: 5px solid #6B710E;
+    }
+    
+    #header {
+        background-color: #FAB72A;
+        padding: 15px;
+        border-right: 1px solid #6B710E;
+        border-left: 1px solid #6B710E;
+    }
+    
+    #header h2 {
+        color: #FFFFF1;
+        font-family: georgia;
+    }
+    
+    #header h2 a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    #header p {
+        color: #788420;
+        font-family: georgia;
+    }
+    
+    .nav_bg {
+        background: #fff;
+        border-bottom: 5px solid #6B710E;
+    }
+    
+    #nav {
+        background-color: #fff;
+        height: 38px;
+        border-right: 1px solid #6B710E;
+        border-left: 1px solid #6B710E;
+    }
+    
+    #nav ul {
+        background-color: #fff;
+        list-style-type: none;
+        z-index: 999;
+    }
+    
+    #nav ul li {
+        float: left;
+        border-right: 1px solid #6B710E;
+    }
+    
+    #nav ul li:last-child {
+        border: none
+    }
+    
+    #nav ul li a {
+        text-decoration: none;
+        color: #7A7F25;
+        display: block;
+        padding: 10px 20px;
+        font-family: arial;
+        -moz-transition: 0.2s all ease;
+        -webkit-transition: 0.2s all ease;
+        transition: 0.2s all ease;
+    }
+    
+    #nav ul li a:hover {
+        color: #fff;
+        background: #6B710E;
+    }
+    
+    #nav .current_page_item a {
+        color: #fff;
+        background: #6B710E;
+    }
+    
+    #nav ul li {
+        position: relative;
+    }
+    
+    #nav ul li ul {
+        position: absolute;
+        left: -99999px;
+        background: #fff;
+    }
+    
+    #nav ul li:hover ul {
+        left: 0;
+    }
+    
+    #nav ul li ul li:first-child {
+        border-top: 5px solid #6B710E;
+    }
+    
+    #nav ul li ul li {
+        float: none;
+        border-right: none;
+        border-bottom: 1px solid #6B710E;
+        width: 200px;
+        position: relative;
+    }
+    
+    #nav ul li ul li ul {
+        position: absolute;
+        top: -999999px;
+    }
+    
+    #nav ul li ul li:hover ul {
+        top: -1px;
+        left: 200px;
+    }
+    
+    #nav ul li ul li ul li {
+        border-left: 1px solid #6B710E;
+    }
+    
+    #nav ul li ul li ul li:first-child {
+        border-top: none;
+    }
+    
+    #nav ul li ul li ul li:last-child {
+        border-left: 1px solid #6B710E;
+    }
+    
+    #slider_wrapper {
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+    }
+    
+    .slider_bg {
+        background: #222222;
+    }
+    
+    .content_bg {
+        background: #fff;
+    }
+    
+    #content_wrapper {
+        background-color: #fff;
+        padding: 10px;
+        overflow: hidden;
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+    }
+    
+    #content {
+        width: 620px;
+        margin-right: 20px;
+        float: left;
+    }
+    
+    #content h2 a {
+        color: #6B710E;
+        font-family: arial;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: 23px;
+    }
+    
+    #content p {
+        margin: 15px 0;
+        font-size: 15px;
+    }
+    
+    #content img {
+        width: 450px;
+    }
+    
+    #content figure {
+        width: 450px;
+        padding: 10px;
+        background: #ddd;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    #content figcaption {
+        text-align: center;
+        color: green;
+        font-family: arial;
+        font-weight: bold;
+    }
+    
+    #content h3 {
+        color: #6B710E;
+        font-family: arial;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+    #sidebar {
+        width: 295px;
+        float: left
+    }
+    
+    #sidebar ul {}
+    
+    #sidebar ul li {
+        border-bottom: 1px solid #D5A6A6;
+        margin-bottom: 3px;
+    }
+    
+    #sidebar ul li:last-child {
+        border-bottom: none
+    }
+    
+    #sidebar ul li a {
+        text-decoration: none;
+        color: #6B710E;
+        padding: 3px;
+        display: block;
+    }
+    
+    #sidebar h2 {
+        color: #6B710E;
+    }
+    
+    .footer_bg {
+        background: #635548;
+    }
+    
+    #footer {
+        background-color: #635548;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    #footer p {
+        color: #fff;
+    }
+    
+    #main_article_single {
+        margin-bottom: 25px;
+        border-bottom: 1px solid #635548;
+        overflow: hidden;
+    }
+    
+    #imgp_wrap img {
+        width: 75px;
+        height: 75px;
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 3px;
+        margin-right: 10px;
+        float: left;
+    }
+    
+    #imgp_wrap p {
+        float: left;
+        width: 500px;
+        margin-top: 0;
+    }
+    
+    #imgp_wrap {
+        margin-top: 10px;
+    }
+    
+    #main_sidebar {
+        border-bottom: 1px solid #6B710E;
+        margin-bottom: 25px;
+        overflow: hidden;
+        padding-bottom: 5px;
+    }
+    
+    #main_sidebar ul li {
+        padding-left: 10px;
+    }
+    
+    #main_sidebar h2 {
+        margin-bottom: 10px;
+    }
+    /* Pagination */
+    
+    .pagination {
+        clear: both;
+        padding: 5px 0;
+        position: relative;
+        font-size: 96%;
+        line-height: 13px;
+        margin: 0.5em 0;
+        overflow: hidden;
+    }
+    
+    .pagination span {
+        padding: 0 13px;
+    }
+    
+    .pagination span,
+    .pagination a {
+        display: block;
+        float: left;
+        margin: 2px 2px 2px 0;
+        padding: 11px;
+        text-decoration: none;
+        width: auto;
+        color: #fff;
+        background: #6b710e;
+    }
+    
+    .pagination a:hover {
+        color: #fff;
+        background: #067092;
+    }
+    
+    .pagination .current {
+        padding: 11px;
+        background: #3279BB;
+        color: #fff;
+    }
+    
+    .nivoSlider img {
+        height: 330px !important;
+    }
+    
+    .nivo-main-image {
+        height: 330px !important;
+    }
