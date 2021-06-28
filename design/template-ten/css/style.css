@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Theano Old Style Regular !important;
+    font-size: 16px;
+}
+
+#header {
+    padding: 15px 0px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #333;
+}
+
+.menu ul {
+    text-align: center;
+}
+
+.menu ul li {
+    padding: 15px;
+    float: left;
+    list-style-type: none;
+}
+
+.menu ul li a {
+    color: #5f6738;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li .sgle-part {
+    position: relative;
+    top: 30px;
+}
+
+.menu ul li img {
+    width: 250px;
+    max-width: 100%;
+}
+
+.choose-date {
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #664;
+    margin-top: -40px;
+    font-family: Theano Old Style Regular !important;
+    position: relative;
+}
+
+.choose-date label {
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+.choose-date input {
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.choose-date input[type=submit] {
+    margin-left: 40px;
+    background-color: #444;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 32px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #777;
+}
+
+article {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+article .art-left {
+    float: left;
+    padding: 10px;
+}
+
+article .art-left img {
+    width: 500px;
+}
+
+article .art-right {
+    float: right;
+    padding: 10px;
+    max-width: 600px;
+}
+
+article .art-right p {
+    line-height: 1.5;
+    padding-top: 5px;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+#items {
+    background-image: url('http://127.0.0.1:5500/image/bg-light.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    padding: 80px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+
+#items h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.item {
+    padding: 2px;
+    max-width: 350px;
+    background-color: #fff;
+}
+
+#items img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.space {
+    padding-top: 20px;
+}
+
+.btn {
+    width: 135px;
+    margin: 15px auto;
+    color: #fff;
+    background-color: #664;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #888;
+}
+
+#events {
+    background-position: center;
+    text-align: center;
+    padding: 80px;
+}
+
+#events .outer {
+    padding-bottom: 100px;
+}
+
+#events h1 {
+    font-size: 40px;
+}
+
+#events p {
+    max-width: 800px;
+    margin: auto;
+}
+
+.events {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event {
+    width: 350px;
+    width: 250px;
+    border: 1px solid #664;
+    position: relative;
+    padding: 10px;
+    padding-top: 70px;
+}
+
+.event img {
+    max-width: 90px;
+    max-height: 70px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.event .img {
+    width: 130px;
+    height: 130px;
+    background: #fff;
+    border: 1px solid #5f6738;
+    border-radius: 50%;
+    line-height: 130px;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+}
+
+.event h3 {
+    text-transform: none;
+}
+
+.event p {
+    padding: 10px;
+}
+
+#email-subscription {
+    padding: 50px;
+    text-align: center;
+    background-image: url('http://127.0.0.1:5500/image/bg-light.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.mail-sub-cls {
+    width: 700px;
+    margin: auto;
+}
+
+.mail-sub-cls h1 {
+    color: #fff;
+    padding: 10px;
+}
+
+.mail-sub-cls form {
+    position: relative;
+}
+
+.mail-sub-cls input[type=email] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #5f6738;
+    padding: 0px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.mail-sub-cls input[type=submit] {
+    background: #5f6738;
+    position: absolute;
+    height: 50px;
+    min-width: 100px;
+    border-radius: 50px;
+    right: 0px;
+    color: #fff;
+    padding: 0px 30px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    top: 0px;
+}
+
+#reviews {
+    padding: 50px;
+    text-align: center;
+    width: 750px;
+    margin: auto;
+}
+
+.fa-quote-left {
+    padding-left: 15px;
+    font-size: 35px;
+    color: #5f6738;
+}
+
+.clients img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+footer {
+    color: #ffffff;
+}
+
+footer h3 {
+    color: #ffffff;
+}
+
+footer .footer-top {
+    padding: 50px;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ftr-item {
+    max-width: 25%;
+    line-height: 1.5;
+}
+
+.ftr-item a {
+    color: #afb97d;
+}
+
+.ftr-item a:hover {
+    color: #ffffff;
+}
+
+.ftr-item img {
+    max-width: 160px;
+}
+
+.ftr-item li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.ftr-item li a {
+    color: #afb97d;
+}
+
+.ftr-item li a:hover {
+    color: #ffffff;
+}
+
+.social-nav ul li {
+    font-size: 25px;
+    float: left;
+    padding: 10px;
+    margin-left: -10px;
+}
+
+.social-nav ul li a {
+    color: #ffffff;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    background-color: #5f6738;
+}
