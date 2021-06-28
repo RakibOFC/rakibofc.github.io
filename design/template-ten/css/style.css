@@ -119,7 +119,8 @@ article .art-right p {
 }
 
 #items {
-    background-image: url(https://rakibofc.github.io/design/template-ten/image/bg-light.jpg);
+    /* background: url(https://rakibofc.github.io/design/template-ten/image/bg-light.jpg); */
+    background: url('/image/bg-light.jpg') no-repeat;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -233,7 +234,7 @@ article .art-right p {
 #email-subscription {
     padding: 50px;
     text-align: center;
-    background-image: url(https://rakibofc.github.io/design/template-ten/image/bg-light.jpg);
+    background: url('/image/bg-light.jpg') no-repeat;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
