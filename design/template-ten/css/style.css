@@ -119,11 +119,10 @@ article .art-right p {
 }
 
 #items {
-    /* background: url(https://rakibofc.github.io/design/template-ten/image/bg-light.jpg); */
-    background: url('/image/bg-light.jpg') no-repeat;
-    background-repeat: no-repeat;
+    background: url('../image/bg-light.jpg') no-repeat;
+    /* background-repeat: no-repeat;
+    background-position: center; */
     background-attachment: fixed;
-    background-position: center;
     text-align: center;
     padding: 80px;
 }
@@ -234,10 +233,10 @@ article .art-right p {
 #email-subscription {
     padding: 50px;
     text-align: center;
-    background: url('/image/bg-light.jpg') no-repeat;
-    background-repeat: no-repeat;
+    background: url('../image/bg-light.jpg') no-repeat;
+    /* background-repeat: no-repeat;
+    background-position: center; */
     background-attachment: fixed;
-    background-position: center;
 }
 
 .mail-sub-cls {
@@ -286,10 +285,10 @@ article .art-right p {
     margin: auto;
 }
 
-.fa-quote-left {
-    padding-left: 15px;
-    font-size: 35px;
-    color: #5f6738;
+.quote {
+    font-size: 150px;
+    margin-bottom: -110px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .clients img {
