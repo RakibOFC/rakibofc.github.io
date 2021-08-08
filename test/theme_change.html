@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+
+    <title>Toggle Dark or Light Mode</title>
+    <style>
+        body {
+            padding: 25px;
+            font-size: 25px;
+        }
+
+        a {
+            color: tomato;
+        }
+
+        .dark-mode {
+            background-color: #202020;
+            color: #eee6e6;
+        }
+
+        .dark-mode a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #test {
+            text-align: center;
+            padding: 5%;
+            background-color: #cccccc;
+        }
+
+        .t-test {
+            color: #cccccc;
+            background-color: black !important;
+        }
+
+        .link a {
+            color: aquamarine;
+            text-decoration: underline;
+        }
+
+
+        .container {
+            padding: 50px;
+            color: #cccccc;
+            background-color: red;
+        }
+
+        .dark-container {
+            color: #cccccc;
+            background-color: black !important;
+        }
+
+        .btn {
+            border-radius: 4px;
+            border: 2px solid green;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100px;
+            text-align: center;
+            padding: 6px;
+            margin-top: 10px;
+        }
+
+        #outer-mode-btn {
+            position: fixed;
+            bottom: 30px;
+            width: 40px;
+            padding: 5px;
+            margin-left: -33px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: #bbbbbb;
+        }
+
+        #outer-mode-btn img {
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .mode-btn {
+            width: 33px;
+            height: 33px;
+            margin: 2px;
+            right: -5px;
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+        .outer-dark-mode-btn {
+            background-color: #000000 !important;
+        }
+
+        .ad-close-btn {
+            cursor: pointer;
+            border-radius: 2px;
+            font-size: 20px;
+            position: absolute;
+            bottom: 105px;
+            padding: 0px 5px;
+            text-align: center;
+            display: inline;
+            background-color: #18191a;
+            border: 1px solid #e6e6e6;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Toggle Dark/Light Mode</h2>
+    <p>Click the button to toggle between dark and light mode for this page <a href="#">link</a></p>
+
+    <div id="test">
+        This is test division <a href="#">link</a>
+    </div>
+
+    <div class="container">
+        This is container class. HTML class identify by JavaScript.
+    </div>
+
+    <div class="btn" onclick="darkMode()">Dark Mode</div>
+
+    <div id="outer-mode-btn">
+        <div class="mode-btn" onclick="darkMode()">
+            <img id="mode-btn" src="https://rakibofc.github.io/images/dark-icon.png" alt="Change Theme"
+                title="Switch to Dark Mode">
+        </div>
+    </div>
+
+    <div class="ad-close-btn" onclick="darkMode()">X</div>
+
+    <script>
+        var modeBtn = document.getElementById('mode-btn');
+        i = localStorage.i;
+
+        console.log(i);
+
+        if (i == null) {
+
+            var i = 2;
+            localStorage.i = i;
+
+        }
+        if (i % 2 != 0) {
+
+            i--;
+            darkMode();
+        }
+
+        function darkMode() {
+            i++;
+            localStorage.i = i;
+
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+
+            var element2 = document.getElementById("test");
+            element2.classList.toggle("t-test");
+
+            /* Container */
+            var container = document.getElementsByClassName("container");
+            container[0].classList.toggle("dark-container");
+
+            element.classList.toggle("body-link");
+            element2.classList.toggle("link");
+
+            var outerModeBtn = document.getElementById("outer-mode-btn");
+            outerModeBtn.classList.toggle("outer-dark-mode-btn");
+
+            if (modeBtn.src.match("dark")) {
+                modeBtn.src = "https://rakibofc.github.io/images/light-icon.png";
+                modeBtn.title = "Switch to Light Mode";
+            } else {
+                modeBtn.src = "https://rakibofc.github.io/images/dark-icon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
